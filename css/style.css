@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+
+aside {
+    width: 230px;
+    background-color: #ffff;
+    color: #681413;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.perfil img {
+    border-radius: 50%;
+    width: 90px;
+    border: 3px solid #681413;
+    margin-bottom: 10px;
+}
+
+.perfil h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.perfil p {
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+.menu-lateral {
+    list-style: none;
+    width: 100%;
+}
+
+.menu-lateral li {
+    margin-bottom: 10px;
+}
+
+.menu-lateral li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    background: #681413;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.menu-lateral li a:hover {
+    background: #9a1915;
+}
+
+
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Barra de pesquisa */
+header {
+    margin-bottom: 25px;
+}
+
+header input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #878787;
+    border-radius: 8px;
+    outline: none;
+}
+
+header input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+/* Seção de solicitações */
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #9a1915;
+}
+
+/* Cards de solicitações */
+.solicitacao {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #878787;
+    background: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.solicitacao:hover {
+    transform: translateY(-3px);
+}
+
+/* Cores de prioridade */
+.prioridade-alta {
+    border-left: 6px solid #e74c3c;
+    background: #fdecea;
+}
+
+.prioridade-media {
+    border-left: 6px solid #f39c12;
+    background: #fff6e5;
+}
+
+.prioridade-baixa {
+    border-left: 6px solid #27ae60;
+    background: #eafaf1;
+}
+
+.solicitacao p {
+    margin: 5px 0;
+}
