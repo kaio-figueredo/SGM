@@ -141,3 +141,14 @@ section h2 {
 .solicitacao p {
     margin: 5px 0;
 }
+
+.perfil-usuario{
+    width:100%;
+    text-align:center;
+    padding:10px 6px;
+    }
+
+.perfil-usuario img{
+        width:92px;
+        height:92px;
+}
