@@ -1,159 +1,126 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
+/* --- Novo CSS para a página de Calendário --- */
 
-
-body {
+/* Estiliza o contêiner principal para o layout de duas colunas */
+.container {
     display: flex;
     min-height: 100vh;
-    background: #f4f6f9;
+    background-color: #fff;
+    width: 100%;
 }
 
-
-aside {
-    width: 230px;
-    background-color: #ffff;
-    color: #681413;
+/* Ajustes na barra lateral para combinar com a imagem */
+.sidebar {
+    width: 250px;
+    background-color: #5d0f10;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 10px;
+    padding: 20px;
 }
 
-.perfil {
-    text-align: center;
-    margin-bottom: 30px;
+.perfil-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.perfil img {
+.perfil-usuario img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    width: 90px;
-    border: 3px solid #681413;
-    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border: none;
 }
 
-.perfil h3 {
-    font-size: 18px;
-    margin-bottom: 4px;
+.perfil-usuario p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
 }
 
-.perfil p {
-    font-size: 14px;
-    color: #bdc3c7;
-}
-
-.menu-lateral {
-    list-style: none;
-    width: 100%;
-}
-
-.menu-lateral li {
-    margin-bottom: 10px;
-}
-
+/* Ajusta o menu lateral para os estilos da imagem */
 .menu-lateral li a {
-    display: block;
-    border: 1px solid #000;
-    padding: 12px;
-    text-decoration: none;
-    color: white;
-    background: #681413;
-    border-radius: 8px;
+    background-color: #8c2323;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
     text-align: center;
-    transition: background 0.3s;
 }
 
 .menu-lateral li a:hover {
-    background: #9a1915;
+    background-color: #a33232;
 }
 
-
-main {
-    flex: 1;
-    padding: 30px;
+/* Estilo para o ícone de envelope no rodapé da sidebar */
+.sidebar .envelope {
+    margin-top: auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8c2323;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Barra de pesquisa */
-header {
-    margin-bottom: 25px;
-}
-
-header input {
-    width: 100%;
-    padding: 12px;
-    font-size: 14px;
-    border: 1px solid #878787;
-    border-radius: 8px;
-    outline: none;
-}
-
-header input:focus {
-    border-color: #1abc9c;
-    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
-}
-
-/* Seção de solicitações */
-section {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-section h2 {
-    margin-bottom: 20px;
+.sidebar .envelope::before {
+    content: '\2709';
     font-size: 20px;
-    color: #9a1915;
+    color: #fff;
 }
 
-/* Cards de solicitações */
-.solicitacao {
+/* Conteúdo principal e layout do calendário */
+.conteudo {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos do card do calendário */
+.card.calendario {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card.calendario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card.calendario th,
+.card.calendario td {
+    border: 1px solid #ccc;
     padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    border: 1px solid #878787;
-    background: #f9f9f9;
-    transition: transform 0.2s;
+    text-align: center;
+    vertical-align: top;
+    height: 100px;
 }
 
-.solicitacao:hover {
-    transform: translateY(-3px);
+.card.calendario thead th {
+    background-color: #eee;
+    font-weight: bold;
+    color: #555;
+    padding: 10px;
 }
 
-/* Cores de prioridade */
-.prioridade-alta {
-    border-left: 6px solid #e74c3c;
-    background: #fdecea;
-}
-
-.prioridade-media {
-    border-left: 6px solid #f39c12;
-    background: #fff6e5;
-}
-
-.prioridade-baixa {
-    border-left: 6px solid #27ae60;
-    background: #eafaf1;
-}
-
-.solicitacao p {
-    margin: 5px 0;
-}
-
-.perfil-usuario{
-    width:100%;
-    text-align:center;
-    padding:10px 6px;
-    }
-
-.perfil-usuario img{
-        width:92px;
-        height:92px;
-}
-.pessoa{
-    width:92px;
-    height:92px; 
+.card.calendario tbody td {
+    background-color: #ddd;
 }
