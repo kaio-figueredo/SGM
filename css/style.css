@@ -213,3 +213,13 @@ section h2 {
     border-radius: 8px;
     overflow: hidden;
 }
+
+.containercalendario{
+    display: flex;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
