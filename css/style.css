@@ -12,7 +12,10 @@ body {
     background: #f4f6f9;
 }
 
-
+.container{
+     display: flex;
+    justify-content: space-between;
+}
 aside {
     width: 230px;
     background-color: #ffff;
@@ -74,6 +77,7 @@ aside {
 main {
     flex: 1;
     padding: 30px;
+    width: auto;
 }
 
 /* Barra de pesquisa */
@@ -156,4 +160,10 @@ section h2 {
 .pessoa{
     width:92px;
     height:92px; 
+}
+
+.calendario{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid #000;
 }
