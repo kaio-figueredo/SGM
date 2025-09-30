@@ -204,65 +204,133 @@ section h2 {
     margin-top: 0;
     margin-bottom: 25px; 
 }
-.container {
-    display: flex;
-    width: 90%;
-    max-width: 1200px;
-    height: 80vh;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-}
 
-.containercalendario{
-    display: flex;
-    width: auto;
-    height: auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
+/* Adicionando estilo para a sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #34495e; /* Fundo escuro para destacar */
+    color: white;
+    padding: 20px 0;
 }
-
-.calendario{
-    max-width: 760px;
-    margin: 10px auto;
-    background-color: #bdc3c7;
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 8px;
+.conteudo {
+    flex-grow: 1;
+    padding: 20px;
 }
-
-.diasemana{
-    display: flex;
-    width: 100%;
+.perfil-usuario {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4a6279;
+}
+.perfil-usuario img {
+    width: 80px;
     height: 80px;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #9a1915;
-    padding: 10px 0;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.menu-lateral {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.menu-lateral li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.menu-lateral li a:hover {
+    background-color: #2c3e50;
+}
+/* Fim dos estilos para a sidebar */
+
+/* SIDEBAR (Sem alterações de cor) */
+.sidebar {
+    width: 250px;
+    background-color: #34495e; 
+    color: white;
+    padding: 20px 0;
+}
+.conteudo {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex; /* Para organizar o calendário e a lista de feriados */
+    flex-direction: column;
+}
+.perfil-usuario {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4a6279;
+}
+.perfil-usuario img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.menu-lateral {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.menu-lateral li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.menu-lateral li a:hover {
+    background-color: #2c3e50;
+}
+/* Fim dos estilos da sidebar */
+
+/* CONTAINER e LAYOUT GERAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-.diasemana span{
-    color: #9a1915;
-    display: inline-block;
-    width: 14.2%;
-    font-weight: bold;
+/* SIDEBAR (Mantenho o estilo que você apresentou no HTML) */
+.sidebar {
+    width: 250px;
+    background-color: #34495e; 
+    color: white;
+    padding: 20px 0;
+    flex-shrink: 0; /* Garante que a sidebar não encolha */
 }
-
-.diasmes{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+.conteudo {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+    overflow-y: auto; /* Permite scroll no conteúdo principal se necessário */
 }
-
-.diasmes span{
-    display: inline-block;
-    width: 14.2%;
-    margin: 8px 0;
-    color: #000;
+.perfil-usuario {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4a6279;
 }
-.mesanterior{
-    opacity: 0.5;
+.perfil-usuario img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.menu-lateral {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.menu-lateral li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.menu-lateral li a:hover {
+    background-color: #2c3e50;
 }
