@@ -13,12 +13,12 @@ body {
 }
 
 .container{
-     display: flex;
+    display: flex;
     justify-content: space-between;
 }
+
 aside {
     width: 230px;
-    background-color: #ffff;
     color: #681413;
     display: flex;
     flex-direction: column;
@@ -208,7 +208,7 @@ section h2 {
 /* Adicionando estilo para a sidebar */
 .sidebar {
     width: 250px;
-    background-color: #34495e; /* Fundo escuro para destacar */
+    background-color: #bdc3c7; /* Fundo escuro para destacar */
     color: white;
     padding: 20px 0;
 }
@@ -219,7 +219,7 @@ section h2 {
 .perfil-usuario {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #4a6279;
+    border-bottom: 1px solid #bdc3c7;
 }
 .perfil-usuario img {
     width: 80px;
@@ -240,15 +240,14 @@ section h2 {
     transition: background-color 0.3s;
 }
 .menu-lateral li a:hover {
-    background-color: #2c3e50;
+    background-color: #9a1915;
 }
 /* Fim dos estilos para a sidebar */
 
 /* SIDEBAR (Sem alterações de cor) */
 .sidebar {
     width: 250px;
-    background-color: #34495e; 
-    color: white;
+    background-color: #9a1915; 
     padding: 20px 0;
 }
 .conteudo {
@@ -260,7 +259,7 @@ section h2 {
 .perfil-usuario {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #4a6279;
+    border-bottom: 1px solid #9a1915;
 }
 .perfil-usuario img {
     width: 80px;
@@ -281,7 +280,7 @@ section h2 {
     transition: background-color 0.3s;
 }
 .menu-lateral li a:hover {
-    background-color: #2c3e50;
+    background-color: #bdc3c7;
 }
 /* Fim dos estilos da sidebar */
 
@@ -296,7 +295,7 @@ body {
 /* SIDEBAR (Mantenho o estilo que você apresentou no HTML) */
 .sidebar {
     width: 250px;
-    background-color: #34495e; 
+    background-color: #bdc3c7; 
     color: white;
     padding: 20px 0;
     flex-shrink: 0; /* Garante que a sidebar não encolha */
@@ -311,7 +310,6 @@ body {
 .perfil-usuario {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #4a6279;
 }
 .perfil-usuario img {
     width: 80px;
@@ -327,7 +325,6 @@ body {
 .menu-lateral li a {
     display: block;
     padding: 10px 20px;
-    color: white;
     text-decoration: none;
     transition: background-color 0.3s;
 }
