@@ -53,7 +53,6 @@ aside {
     width: 100%;
 }
 
-
 .menu-lateral li {
     margin-bottom: 10px;
 }
@@ -204,133 +203,13 @@ section h2 {
     margin-top: 0;
     margin-bottom: 25px; 
 }
-
-/* Adicionando estilo para a sidebar */
-.sidebar {
-    width: 250px;
-    background-color: #34495e; /* Fundo escuro para destacar */
-    color: white;
-    padding: 20px 0;
-}
-.conteudo {
-    flex-grow: 1;
-    padding: 20px;
-}
-.perfil-usuario {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #4a6279;
-}
-.perfil-usuario img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-.menu-lateral {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-}
-.menu-lateral li a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-.menu-lateral li a:hover {
-    background-color: #2c3e50;
-}
-/* Fim dos estilos para a sidebar */
-
-/* SIDEBAR (Sem alterações de cor) */
-.sidebar {
-    width: 250px;
-    background-color: #34495e; 
-    color: white;
-    padding: 20px 0;
-}
-.conteudo {
-    flex-grow: 1;
-    padding: 20px;
-    display: flex; /* Para organizar o calendário e a lista de feriados */
-    flex-direction: column;
-}
-.perfil-usuario {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #4a6279;
-}
-.perfil-usuario img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-.menu-lateral {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-}
-.menu-lateral li a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-.menu-lateral li a:hover {
-    background-color: #2c3e50;
-}
-/* Fim dos estilos da sidebar */
-
-/* CONTAINER e LAYOUT GERAL */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     background-color: #f0f0f0;
-}
-
-/* SIDEBAR (Mantenho o estilo que você apresentou no HTML) */
-.sidebar {
-    width: 250px;
-    background-color: #34495e; 
-    color: white;
-    padding: 20px 0;
-    flex-shrink: 0; /* Garante que a sidebar não encolha */
-}
-.conteudo {
-    flex-grow: 1;
-    padding: 20px;
-    display: flex; 
-    flex-direction: column;
-    overflow-y: auto; /* Permite scroll no conteúdo principal se necessário */
-}
-.perfil-usuario {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #4a6279;
-}
-.perfil-usuario img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-.menu-lateral {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-}
-.menu-lateral li a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-.menu-lateral li a:hover {
-    background-color: #2c3e50;
+    border-radius: 8px;
+    overflow: hidden;
 }
