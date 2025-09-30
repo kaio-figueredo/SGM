@@ -12,7 +12,10 @@ body {
     background: #f4f6f9;
 }
 
-
+.container{
+     display: flex;
+    justify-content: space-between;
+}
 aside {
     width: 230px;
     background-color: #ffff;
@@ -50,12 +53,14 @@ aside {
     width: 100%;
 }
 
+
 .menu-lateral li {
     margin-bottom: 10px;
 }
 
 .menu-lateral li a {
     display: block;
+    border: 1px solid #000;
     padding: 12px;
     text-decoration: none;
     color: white;
@@ -73,6 +78,7 @@ aside {
 main {
     flex: 1;
     padding: 30px;
+    width: auto;
 }
 
 /* Barra de pesquisa */
@@ -140,4 +146,81 @@ section h2 {
 
 .solicitacao p {
     margin: 5px 0;
+}
+
+.perfil-usuario{
+    width:100%;
+    text-align:center;
+    padding:10px 6px;
+    }
+
+.perfil-usuario img{
+        width:92px;
+        height:92px;
+}
+
+.pessoa{
+    width:92px;
+    height:92px; 
+}
+
+.calendario{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid #000;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pessoa img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+.colaboradores-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+}
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 1.4em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 25px; 
+}
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.containercalendario{
+    display: flex;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
 }
