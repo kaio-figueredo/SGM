@@ -84,6 +84,7 @@ main {
     flex: 1;
     padding: 30px;
     width: auto;
+    height: auto;
 }
 
 /* Barra de pesquisa */
@@ -243,7 +244,7 @@ hr{
     width: 100%;
 }
 
-button{
+.botaoquadro{
     position: absolute;
     bottom: 0;
     background-color: #bdc3c7 ;
@@ -269,4 +270,29 @@ button{
     border-radius: 8px;
     padding: 10px;
     box-shadow: 2px 2px 2px #9a1915;
+}
+
+.login{
+    padding: 10px;
+    gap: 40px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdc3c7;
+}
+
+.botaologin{
+    width: auto;
+    height: 30px;
+}
+
+.conteudologin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
 }
