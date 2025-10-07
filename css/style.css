@@ -101,10 +101,6 @@ header input {
     outline: none;
 }
 
-header input:focus {
-    border-color: #1abc9c;
-    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
-}
 
 /* Seção de solicitações */
 section {
@@ -114,9 +110,20 @@ section {
 }
 
 .gestor {
+    box-shadow: 1px 1px 1px #9a1915;
+    border: 1px solid #9a1915;
     background: white;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.tecnico{
+    box-shadow: 1px 1px 1px #9a1915;
+    border: 1px solid #9a1915;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;  
 }
 
 section h2 {
@@ -155,21 +162,24 @@ section h2 {
 }
 
 .pessoa{
+    gap: 10px;
     width:100px;
     height:92px; 
+    
 }
 
 .grid{
+    gap: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
 }
 
 .pessoa {
     width: auto;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
 
 }
@@ -186,6 +196,7 @@ section h2 {
     padding: 20px;
     border-radius: 8px;
     width: 100%;
+
 }
 
 .card {
@@ -253,10 +264,11 @@ hr{
     border: 1px solid #9a1915;
     border-radius: 8px;
     padding: 10px;
-    box-shadow: 2px 2px 2px #9a1915;
+    box-shadow: 1px 1px 1px #9a1915;
 }
 
 .login{
+    border-radius: 8px;
     padding: 10px;
     gap: 20px;
     width: 50%;
@@ -282,6 +294,7 @@ hr{
 }
 
 .conteudologin{
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,6 +412,7 @@ a{
 }
 
 .formulariocriar{
+    box-shadow: 1px 1px 1px #9a1915;
     width: 100%;
     height: auto;
     border: 1px solid #681413;
