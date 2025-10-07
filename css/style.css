@@ -360,11 +360,12 @@ hr{
 }
 
 label{
-   width: 300px;
-   height: 30px; 
+    width: 300px;
+    height: 30px; 
 }
 
 input{
+    padding: 10px;
     border-radius: 8px;
     width: 100%;
     height: 30px;
@@ -408,6 +409,20 @@ a{
 }
 
 .ab{
+    padding: 10px;
     display: flex;
     justify-content: baseline;
+}
+
+.formulariocriar{
+    width: 100%;
+    height: auto;
+    border: 1px solid #681413;
+    border-radius: 8px;
+    background-color: #bdc3c7;
+    color: #681413;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
 }
