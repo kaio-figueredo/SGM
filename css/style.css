@@ -139,22 +139,6 @@ section h2 {
     transform: translateY(-3px);
 }
 
-/* Cores de prioridade */
-.prioridade-alta {
-    border-left: 6px solid #e74c3c;
-    background: #fdecea;
-}
-
-.prioridade-media {
-    border-left: 6px solid #f39c12;
-    background: #fff6e5;
-}
-
-.prioridade-baixa {
-    border-left: 6px solid #27ae60;
-    background: #eafaf1;
-}
-
 .solicitacao p {
     margin: 5px 0;
 }
@@ -425,4 +409,37 @@ a{
     gap: 10px;
     flex-direction: column;
     display: flex;
+}
+
+.obrigadaa{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.obrigada{
+    color: #f0f0f0;
+    width: 60%;
+    height: 200px;
+    background-color: #681413;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.botaoobrigada{
+    padding: 10px;
+    border-radius: 8px;
+    width: auto;
+    color: #f0f0f0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
