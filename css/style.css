@@ -134,6 +134,7 @@ section h2 {
 
 /* Cards de solicitações */
 .solicitacao {
+    box-shadow: 1px 1px 1px #9a1915;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -268,6 +269,7 @@ hr{
 }
 
 .login{
+    box-shadow: 1px 1px 1px #9a1915;
     border-radius: 8px;
     padding: 10px;
     gap: 20px;
@@ -335,6 +337,7 @@ hr{
 }
 
 .formulariocadastro{
+    box-shadow: 1px 1px 1px #9a1915;
     width: 45%;
     height: auto;
     border: 1px solid #681413;
