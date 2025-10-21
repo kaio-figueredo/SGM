@@ -86,7 +86,7 @@ aside {
     background: #9a1915;
 }
 .botaomenu{
-    /* padding: 10px;
+   padding: 10px;
     border-radius: 8px;
     background-color: #681413;
     width: 100%;
@@ -94,7 +94,7 @@ aside {
     height: 30px;
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
 }
 
 main {
@@ -260,10 +260,10 @@ hr{
 }
 
 button{ 
-    padding: 0px;
+    padding: 10px;
     border-radius: 8px;
     background-color: #681413;
-    width: 100%;
+    width: auto;
     color: #f0f0f0;
     height: 30px;
     display: flex;
@@ -438,7 +438,7 @@ a{
 
 }
 
-.botaocriar{
+.botaocriar {
     padding: 10px;
     border-radius: 8px;
     background-color: #681413;
@@ -450,6 +450,17 @@ a{
     align-items: center;
 }
 
+.botaosalvar {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #681413;
+    width: 100px;
+    color: #f0f0f0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .ab{
     padding: 10px;
