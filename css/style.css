@@ -462,6 +462,12 @@ a{
     align-items: center;
 }
 
+.botaosalvar2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ab{
     padding: 10px;
     display: flex;
